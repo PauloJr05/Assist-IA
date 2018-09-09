@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 
 
-from chatterbot.trainers import ListTrainer
+from chatterbot.trainers import ListTrainer, ChatterBotCorpusTrainer
 from chatterbot import ChatBot
 
 import os
 
 bot = ChatBot('Raquel')
+
+bot.set_trainer(ChatterBotCorpusTrainer)
+bot.train("chatterbot.corpus.portuguese")
 
 bot.set_trainer(ListTrainer)  # define metodo de treinamento
 
