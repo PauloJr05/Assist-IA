@@ -1,10 +1,9 @@
-oi
-olá
-bom dia
-bom dia como vai?
-vou bem, e você?
-que bom!
-Gostaria de alguma coisa?
-Ok!
-Farei uma busca e te digo
-Mais alguma coisa?
+Oi
+Olá
+Bom dia
+Bom dia, como vai?
+Vou bem, e você?
+Que bom!
+Qual o seu nome?
+Meu nome é Raquel
+E o seu?
