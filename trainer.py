@@ -30,5 +30,5 @@ class Trainer:
             bot.train(lines)
 
     def chatsFile(self, nameFile, talk):
-        open('Chats/' + str(nameFile), 'a').writelines(talk + "\n")
+        open('Chats/' + 'talking_' + str(nameFile), 'a').writelines(talk + "\n")
 
