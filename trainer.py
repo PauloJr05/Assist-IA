@@ -6,14 +6,29 @@ from chatterbot import ChatBot
 
 import os
 
+
 bot = ChatBot('Raquel')
 
-bot.set_trainer(ChatterBotCorpusTrainer)
-bot.train("chatterbot.corpus.portuguese")
 
-bot.set_trainer(ListTrainer)  # define metodo de treinamento
 
-for _file in os.listdir('Chats'):  # Percorrer todos os arquivos e chats
-    lines = open('Chats/' + _file, 'r').readlines()  # Ler as linhs dos arquivos dos chats
+class Trainer:
+    def __init__(self):
+        None
 
-    bot.train(lines)
+
+    def trainerCorpusPt(self):
+        bot.set_trainer(ChatterBotCorpusTrainer)
+        bot.train("chatterbot.corpus.portuguese")
+
+
+
+    def trainerList(self):
+        bot.set_trainer(ListTrainer)  # define metodo de treinamento modo lista
+
+        for _file in os.listdir('Chats'): #Percorrer todos os arquivos e chats
+            lines = open('Chats/' + _file, 'r').readlines()  # Ler as linhs dos arquivos dos chats
+            bot.train(lines)
+
+    def chatsFile(self, nameFile, talk):
+        open('Chats/' + str(nameFile), 'a').writelines(talk + "\n")
+
