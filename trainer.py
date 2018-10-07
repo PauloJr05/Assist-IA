@@ -10,8 +10,10 @@ CONVERSATION = 'learning_conversation'
 
 bot = ChatBot('Raquel',
               storage_adapter="chatterbot.storage.SQLStorageAdapter",
-              logic_adapters=['chatterbot.logic.BestMatch']
-
+              logic_adapters=["chatterbot.logic.BestMatch",
+                              "chatterbot.logic.MathematicalEvaluation",
+                              "chatterbot.logic.TimeLogicAdapter"]
+              
               )
 
 
@@ -76,9 +78,9 @@ class Trainer:
 
                 bot.learn_response(response1, input_statement)
                 print("Ok! Aprendido")
-                self.chatsFile('learning', str(input_statement))
-                self.chatsFile('learning', str(response1))
-                self.trainerListUpdate('learning')
+                self.chatsFile('learning_01', str(input_statement))
+                self.chatsFile('learning_01', str(response1))
+                self.trainerListUpdate('learning_01')
             # bot.save()
 
     # Press ctrl-c or ctrl-d on the keyboard to exit

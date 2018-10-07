@@ -1,0 +1,8 @@
+
+()colocar letra maiuscula na pergunta
+()fazer requisição na net
+()cosultar tempo
+()abrir programas
+()fazer pesquisas
+(x)inserir delay para dar sensação de pausa 
+()inserir voz
