@@ -1,5 +1,5 @@
 
-()colocar letra maiuscula na pergunta
+(x)colocar letra maiuscula na pergunta
 ()fazer requisição na net
 ()cosultar tempo
 ()abrir programas
