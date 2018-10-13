@@ -1,0 +1,10 @@
+Abra o chrome
+chromium
+Abra o google
+https://www.google.com
+Abra o terminal
+terminator
+Abra o chome
+chromium
+Abra a idle3
+idle3 

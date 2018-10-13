@@ -17,9 +17,14 @@ while True:
     if arg[1] == 'Conversa':
 
         eu = str(input('Eu: ')).lower().capitalize()
-        if ('Calcule' in eu):
-            temp1 = Cmds().calc(eu)
-            print('Raquel: O resultado é: {}, mais alguma coisa?'.format(temp1))
+        if 'Calcule' in eu:
+            resp = Cmds().calc(eu)
+            print('Raquel: O resultado é: {}, deseja algo mais?'.format(resp))
+
+        elif 'Abra' in eu:
+            resp = Cmds().executaProg(bot.get_response(eu))
+            print('Raquel: O {} foi aberto com sucesso, deseja algo mais?'.format(resp))
+            
         else:
             print('Raquel:{}'.format(bot.get_response(eu)))
 
